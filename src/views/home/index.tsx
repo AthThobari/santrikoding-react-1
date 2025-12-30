@@ -14,14 +14,18 @@ const Home: FC = () => {
           santrikoding.com
         </p>
         <hr />
-        <Link to="/register" className="btn btn-primary btn-lg me-3"
-style={{ minWidth: "150px"}}
->
+        <Link
+          to="/register"
+          className="btn btn-primary btn-lg me-3"
+          style={{ minWidth: "150px" }}
+        >
           Register
         </Link>
-        <Link to="/login" className="btn btn-primary btn-secondary me-3 px-5 btn-lg"
-style={{ minWidth: "150px", minHeight: "48px"}}
->
+        <Link
+          to="/login"
+          className="btn btn-primary btn-secondary me-3 px-5 btn-lg"
+          style={{ minWidth: "150px", minHeight: "48px" }}
+        >
           Login
         </Link>
       </div>

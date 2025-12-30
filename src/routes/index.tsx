@@ -16,6 +16,9 @@ import Register from "../views/auth/register.tsx";
 //import view login
 import Login from "../views/auth/login.tsx";
 
+//import view dashboard
+import Dashboard from "../views/admin/dashboard/index.tsx";
+
 export default function AppRoutes() {
   // Using useContext to get valuue from AuthContext
   const auth = useContext(AuthContext);
@@ -49,6 +52,14 @@ export default function AppRoutes() {
           ) : (
             <Login />
           )
+        }
+      />
+
+      {/* route "/admin/dashboard" */}
+      <Route
+        path="/admin/dashboard"
+        element={
+          isAuthenticated ? <Dashboard /> : <Navigate to="/login" replace />
         }
       />
     </Routes>
