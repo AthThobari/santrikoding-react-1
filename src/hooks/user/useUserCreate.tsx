@@ -23,7 +23,7 @@ export const useUserCreate = () => {
       const token = Cookies.get("token");
 
       //using service API for register
-      const response = await Api.post("/api/usesrs", data, {
+      const response = await Api.post("/api/users", data, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
